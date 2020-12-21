@@ -43,6 +43,8 @@ public class PlayerMovement : MonoBehaviour {
 
 	public void OnCrouching (bool isCrouching)
 	{
+		Debug.Log("crouch pressed: " + isCrouching + " but crouch=" + crouch);
+
 		animator.SetBool("IsCrouching", isCrouching);
 	}
 
